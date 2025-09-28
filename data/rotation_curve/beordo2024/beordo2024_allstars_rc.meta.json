@@ -1,0 +1,7 @@
+{
+  "source": "Beordo et al. 2024 (Gaia DR3), ALL-stars panel (digitized)",
+  "velocity": "V_phi (median per radial bin)",
+  "errors": "RSE per bin; used as observational scatter",
+  "R_range_kpc": [4.5, 19.0],
+  "notes": "Use sigma_obs = 0.5*(eVphi_plus_kms + eVphi_minus_kms)"
+}
