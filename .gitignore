@@ -31,3 +31,4 @@ __pycache__/
 .venv/
 *.pyc
 Untitled.ipynb
+setup_step2.sh
