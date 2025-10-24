@@ -1,0 +1,3 @@
+MLE success: True | message: CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
+Disk M=6.201e+10 a=2.00 b=1.19; Bulge M=1.000e+08 a=2.00; Halo rho0=6.460e+06 rs=18.85 gamma=1.34; GP amp=1.69 scale=0.66 jitter=0.10
+Saved plot: data/rotation_curve/beordo2024/rc_gp_fit_physical.png
