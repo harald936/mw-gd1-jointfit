@@ -1,0 +1,8 @@
+{
+  "note": "Working subset for prototyping; will be superseded by CMD+distance model.",
+  "cuts": {
+    "p_member": ">0.8",
+    "Gmag": "<19.5",
+    "|phi2|": "<5 deg"
+  }
+}
