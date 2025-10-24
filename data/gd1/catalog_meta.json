@@ -1,0 +1,24 @@
+{
+  "source": "Gaia DR3 (gaiadr3.gaia_source)",
+  "steps": {
+    "ridge_fit": {
+      "model": "G ~ a*phi1 + b",
+      "a": 0.0008484693690242705,
+      "b": 18.354733738403542,
+      "band_mag": 0.6
+    },
+    "cmd_filter": {
+      "bp_rp_range": [
+        0.2,
+        1.4
+      ]
+    },
+    "gmm_space": [
+      "pm_phi1",
+      "pm_phi2",
+      "phi2_deg"
+    ],
+    "gmm_k": 2
+  },
+  "notes": "This is a simple, reproducible refinement. You can tighten bands or add RVs later."
+}
