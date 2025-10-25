@@ -32,3 +32,5 @@ __pycache__/
 *.pyc
 Untitled.ipynb
 setup_step2.sh
+data/gd1/
+*.bak

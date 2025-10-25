@@ -1,0 +1,32 @@
+
+% Auto-generated summary for mw-gd1-jointfit
+\section*{Milky Way RC baseline (axisymmetric; running-median fit)}
+
+\textbf{Best-fit (MLE) parameters} (this work, RC-only):
+\begin{align*}
+v_h &= 202.6~\mathrm{km\,s^{-1}}, &
+r_h &= 10.00~\mathrm{kpc}, &
+\gamma &= 1.60,\\
+q_z &\approx 0.90~\text{(held for RC-only)},\quad
+s_d &= 1.30,\quad
+a &= 5.30~\mathrm{kpc},\quad
+s_b &= 1.30.
+\end{align*}
+
+\textbf{Interpretation}:
+\begin{itemize}
+\item $v_h$ sets the halo contribution to $V_c$.
+\item $r_h$ is the halo scale radius (where the RC transitions).
+\item $\gamma$ is the inner gNFW slope (higher $\gamma$ = cuspier). Here we softly anchor $\gamma$ to the NumPyro RC-only posterior.
+\item $q_z$ is the halo flattening (vertical shape). RC alone is weakly sensitive; GD-1 will sharpen this.
+\item $s_d$, $a$ adjust disk mass and radial scale; $s_b$ scales the bulge (helps with baryon–halo degeneracy).
+\end{itemize}
+
+\textbf{Method in brief}: We fit the running-median RC over $6{-}18~\mathrm{kpc}$
+with a disk+bulge+gNFW halo using global+local optimization, a Solar-circle anchor
+$V_c(8.2~\mathrm{kpc})\approx230~\mathrm{km\,s^{-1}}$, and soft priors on baryons and halo.
+This captures the broad trend relevant for halo constraints while avoiding overfitting non-axisymmetric wiggles.
+
+\textbf{Next step (joint fit)}: Include GD-1 (Gaia DR3) to constrain $q_z$.
+The stream’s 3D track and proper motions are sensitive to the vertical force, so combining RC (in-plane)
+with GD-1 (vertical sensitivity) breaks degeneracies and tightens the halo shape.
