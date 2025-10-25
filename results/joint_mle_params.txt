@@ -1,0 +1,7 @@
+vh=202.621 km/s
+rh=10.000 kpc
+gamma=1.600
+qz=0.900
+disk_scale=1.300
+disk_a=5.300 kpc
+bulge_scale=1.300
