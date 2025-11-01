@@ -32,3 +32,6 @@ __pycache__/
 *.pyc
 Untitled.ipynb
 setup_step2.sh
+
+results/joint_qz*.png
+results/gd1_qz*.png
