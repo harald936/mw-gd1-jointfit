@@ -1,4 +1,0 @@
-qz_fit=0.7000
-sigma_qz=nan
-ci68=[nan,nan]
-ci95=[nan,nan]
