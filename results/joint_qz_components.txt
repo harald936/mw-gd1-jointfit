@@ -1,0 +1,7 @@
+component stream
+qz_stream 1.0930
+sigma_stream 0.0127
+component rotation_curve_beordo2024
+A_coeff 1.262027e+05
+q_ref 1.0000
+rc_file /Users/haralds./mw-gd1-jointfit/data/rotation_curve/beordo2024_allstars_rc_ready.csv

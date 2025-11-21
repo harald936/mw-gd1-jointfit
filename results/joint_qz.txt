@@ -1,0 +1,6 @@
+qz_fit 1.0040
+sigma_qz 0.0027
+ci68 1.0017 1.0070
+ci95 0.9990 1.0097
+method joint_stream_gaussian_plus_rc_scaling_beordo2024
+rc_file /Users/haralds./mw-gd1-jointfit/data/rotation_curve/beordo2024_allstars_rc_ready.csv
