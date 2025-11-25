@@ -35,3 +35,5 @@ setup_step2.sh
 
 results/joint_qz*.png
 results/gd1_qz*.png
+data/gd1/gd1_raw_dr3.csv
+data/gd1/gd1_lite.csv
