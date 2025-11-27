@@ -1,0 +1,3 @@
+baseline disk_factor 1.000 qz_fit 1.0950 sigma_qz 0.0100 ci68 1.0850 1.1050 ci95 1.0700 1.1150
+disk_low disk_factor 0.800 qz_fit 1.0950 sigma_qz 0.0100 ci68 1.0850 1.1050 ci95 1.0700 1.1150
+disk_high disk_factor 1.200 qz_fit 1.0950 sigma_qz 0.0100 ci68 1.0850 1.1050 ci95 1.0700 1.1150
