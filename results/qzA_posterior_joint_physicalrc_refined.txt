@@ -1,0 +1,4 @@
+Refined joint posterior for q_z and A using existing grid
+q_z median 1.091763, 68% interval [1.078802, 1.104736], 95% interval [1.066347, 1.117141]
+A   median 1.061711, 68% interval [1.054144, 1.070267], 95% interval [1.045888, 1.077028]
+Corr(q_z, A) 0.000000
