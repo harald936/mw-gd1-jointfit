@@ -1,0 +1,5 @@
+label Rmin_kpc Rmax_kpc qz_fit sigma_qz
+full 4.50 14.00 1.9237 0.0000
+inner 4.50 8.00 1.7126 0.0000
+mid 8.00 12.00 1.9178 0.0000
+outer 12.00 16.00 2.4782 0.0000
