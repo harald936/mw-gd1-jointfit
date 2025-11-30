@@ -1,0 +1,2 @@
+1D q_z posterior derived by marginalizing A from refined 2D q_z–A grid
+q_z median 1.091763, 68% interval [1.078802, 1.104736], 95% interval [1.066347, 1.117141]
