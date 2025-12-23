@@ -1,0 +1,8 @@
+gamma_grid_min 0.000000 gamma_grid_max 2.000000 N_gamma 161
+gamma_median 1.642138
+gamma_68 1.634642 1.647499
+gamma_95 1.626215 1.649627
+P_core_0_0.5 0.000000
+P_shallow_0.5_1.0 0.000000
+P_nfw_1.0_1.5 0.000000
+P_steep_>1.5 1.000000
