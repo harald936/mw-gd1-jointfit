@@ -1,0 +1,9 @@
+RC file /Users/haralds./mw-gd1-jointfit/data/rotation_curve/beordo2024_allstars_rc_ready.csv
+rc_nuts_summary /Users/haralds./mw-gd1-jointfit/results/rc_nuts_summary.csv
+gamma_grid_min 0.000000 gamma_grid_max 2.000000 N_gamma 161
+A_grid_min 0.600000 A_grid_max 1.400000 N_A 121
+scenario gamma_true gamma_median gamma_68_lo gamma_68_hi gamma_95_lo gamma_95_hi P_core P_shallow P_nfw P_steep
+core_true 0.000000 0.047667 0.004290 0.122785 0.000000 0.214570 1.000000 0.000000 0.000000 0.000000
+nfw_true 1.000000 0.943797 0.901418 0.985727 0.859547 1.025697 0.000000 0.851370 0.148630 0.000000
+steep_true 1.600000 1.587052 1.564830 1.609323 1.542443 1.631189 0.000000 0.000000 0.000003 0.999997
+real_data NaN 1.642138 1.634642 1.647499 1.626215 1.649627 0.000000 0.000000 0.000000 1.000000
