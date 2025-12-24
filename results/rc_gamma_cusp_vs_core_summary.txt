@@ -1,0 +1,7 @@
+RC-only gamma posterior (Gaussian approximation from rc_nuts_summary.csv)
+mu 0.027000, sigma 0.028000
+68% CI [-0.000915, 0.054775], 95% CI [-0.027949, 0.081809]
+P(|gamma| <= 0.200) ~ 1.0000 (core-like region)
+P(gamma > 1.0) ~ 0.0000 (strongly cuspy)
+P(gamma > 0.0) ~ 0.8328, P(gamma < 0.0) ~ 0.1672
+Core (gamma=0) is disfavoured at ~0.96 sigma based on mu/sigma

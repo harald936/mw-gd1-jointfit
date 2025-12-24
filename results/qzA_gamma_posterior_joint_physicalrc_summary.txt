@@ -1,0 +1,5 @@
+3D factored posterior p(q_z, A, gamma | data) = p(q_z, A | GD-1+RC) * p(gamma | RC)
+q_z median 1.091763, 68% [1.078802, 1.104736], 95% [1.066347, 1.117141]
+A   median 1.061711, 68% [1.054144, 1.070267], 95% [1.045888, 1.077028]
+gamma median 0.032458, 68% [0.011718, 0.057848], 95% [0.001573, 0.083635]
+RC-only gamma mean 0.027000, sd 0.028000 (from rc_nuts_summary.csv)

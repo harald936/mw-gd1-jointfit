@@ -1,0 +1,10 @@
+{
+  "sky_box": {
+    "ra_min": 130,
+    "ra_max": 200,
+    "dec_min": 10,
+    "dec_max": 50
+  },
+  "pm_window_note": "p_member from 2-GMM on (pm_phi1, pm_phi2); no hard PM window.",
+  "notes": "Gaia DR3 (gaiadr3.gaia_source) at ESA TAP."
+}

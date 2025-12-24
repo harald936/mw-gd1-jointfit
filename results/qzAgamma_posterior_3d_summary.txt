@@ -1,0 +1,5 @@
+3D posterior samples p(q_z, A, gamma)
+q_z: mean 1.09290, std 0.01294
+A:   mean 1.06295, std 0.00797
+gamma: mean 0.02707, std 0.02784
+gamma prior (from RC): mu 0.02700, sigma 0.02800
