@@ -4,7 +4,10 @@ import numpy as np
 import pandas as pd
 import jax, jax.numpy as jnp
 import matplotlib.pyplot as plt
-import arviz as az
+try:
+    import arviz as az
+except Exception:
+    az = None
 import numpyro
 import numpyro.distributions as dist
 from numpyro.infer import MCMC, NUTS, init_to_median
