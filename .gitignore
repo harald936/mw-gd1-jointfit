@@ -61,3 +61,4 @@ results/*.txt
 !results/rc_gammaA_from_nuts_samples.txt
 !results/rc_gamma_posterior_core_vs_cusp.txt
 !results/qzA_gamma_posterior_joint_physicalrc_summary.txt
+results/qzA_gamma_posterior_joint_physicalrc_factored_grid.npz
