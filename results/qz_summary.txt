@@ -1,3 +1,3 @@
 label qz_fit sigma_qz ci68_lo ci68_hi ci95_lo ci95_hi method file
-toy_joint_scaling 1.0040 0.0027 1.0017 1.0070 0.9990 1.0097 joint_stream_gaussian_plus_rc_scaling_beordo2024 /Users/haralds./mw-gd1-jointfit/results/joint_qz.txt
+toy_joint_scaling_DIAGNOSTIC 1.0040 0.0027 1.0017 1.0070 0.9990 1.0097 joint_stream_gaussian_plus_rc_scaling_beordo2024 /Users/haralds./mw-gd1-jointfit/results/joint_qz.txt
 physical_joint_rc 1.0950 0.0100 1.0850 1.1050 1.0700 1.1150 joint_stream_gaussian_plus_physical_beordo2024_rc_acc /Users/haralds./mw-gd1-jointfit/results/joint_qz_physicalrc.txt
