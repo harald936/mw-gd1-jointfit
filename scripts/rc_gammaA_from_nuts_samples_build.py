@@ -64,7 +64,7 @@ def main():
         A_cent = np.asarray(z["A"], float)
         P = np.asarray(z["posterior"], float)
     else:
-        raise RuntimeError("missing results/rc_nuts_quick_posterior.npz and results/rc_gammaA_from_nuts_samples.npz")
+        raise RuntimeError("missing rc_nuts_quick_posterior.npz and rc_gammaA_from_nuts_samples.npz in results/")
 
     eps = 1e-300
     p_gamma = P.sum(axis=1)
