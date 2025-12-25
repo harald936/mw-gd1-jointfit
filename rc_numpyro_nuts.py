@@ -151,7 +151,7 @@ def main():
     plt.legend(); plt.tight_layout()
     plt.savefig("results/rc_gammaeff_ribbon.png", dpi=160)
 
-    print("Saved files:\n  results/rc_nuts_summary.csv\n  results/rc_nuts_ribbon.png\n  results/rc_gammaeff_ribbon.png")
+    print("Saved files:\n  results/rc_nuts_summary.csv  results/rc_nuts_ribbon.png  results/rc_gammaeff_ribbon.png")
 
 if __name__ == "__main__":
     main()
