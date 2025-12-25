@@ -57,7 +57,6 @@ results/*.txt
 
 # but keep the ones we actually want tracked (override above if needed)
 !results/rc_gammaA_from_nuts_samples.npz
-!results/rc_gammaA_from_nuts_samples.pdf
 !results/rc_gammaA_from_nuts_samples.txt
 !results/rc_gamma_posterior_core_vs_cusp.txt
 !results/qzA_gamma_posterior_joint_physicalrc_summary.txt
