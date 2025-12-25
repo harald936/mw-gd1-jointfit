@@ -1,0 +1,10 @@
+npz /Users/haralds./mw-gd1-jointfit/results/rc_gammaA_from_nuts_samples.npz
+N_samples 600
+gamma_clip_range 0.2 1.8
+A_clip_range 0.05 16.471291770883862
+frac_clipped_low 0.03333333333333333
+frac_clipped_high 0.01
+corr_gamma_A_samples -0.16699046840596188
+gamma_median 1.336645962732919
+gamma_68 0.729192546583851 1.6181366459627329
+gamma_95 0.3366459627329193 1.7503105590062107

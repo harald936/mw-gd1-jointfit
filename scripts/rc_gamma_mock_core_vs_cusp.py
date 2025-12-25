@@ -58,7 +58,7 @@ def load_rc_params(summary_path):
             lc = c.lower()
             if lc == "mean":
                 mean_col = c
-            if "sd" in lc or "sigma" in lc:
+            if ("sd" in lc or "sigma" in lc) and "mcse" not in lc:
                 sd_col = c
         if mean_col is None:
             mean_col = df.columns[1]

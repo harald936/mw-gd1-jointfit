@@ -100,7 +100,7 @@ def core_cusp_bands(ax, gamma):
 def main():
     repo = Path(".").resolve()
     qzA_path = repo / "results" / "qzA_posterior_joint_physicalrc_refined_grid.npz"
-    gammaA_path = repo / "results" / "rc_gammaA_posterior_grid.npz"
+    gammaA_path = repo / "results" / "rc_gammaA_from_nuts_samples.npz"
     if not qzA_path.exists():
         raise RuntimeError("missing qzA grid file")
     if not gammaA_path.exists():

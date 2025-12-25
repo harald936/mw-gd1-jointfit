@@ -1,8 +1,12 @@
-gamma_grid_min 0.000000 gamma_grid_max 2.000000 N_gamma 161
-gamma_median 1.642138
-gamma_68 1.634642 1.647499
-gamma_95 1.626215 1.649627
-P_core_0_0.5 0.000000
-P_shallow_0.5_1.0 0.000000
-P_nfw_1.0_1.5 0.000000
-P_steep_>1.5 1.000000
+gamma_grid_min 0.204969 gamma_grid_max 1.795031 N_gamma 161
+gamma_median 1.336646
+gamma_68 0.729193 1.618137
+gamma_95 0.336646 1.750311
+binning_convention: core <0.5, shallow [0.5,1.0), nfw [1.0,1.5), steep >=1.5 (half-open bins)
+P_core_<0.5 0.090000
+P_shallow_[0.5,1.0) 0.208333
+P_nfw_[1.0,1.5) 0.358333
+P_steep_>=1.5 0.343333
+mass_at_gamma_0.5 NONE
+mass_at_gamma_1.0 0.005000
+mass_at_gamma_1.5 NONE

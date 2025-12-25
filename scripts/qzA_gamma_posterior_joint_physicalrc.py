@@ -45,9 +45,9 @@ def load_gamma_from_rc_summary(path):
     sd_col = None
     for c in df.columns:
         lc = c.lower()
-        if "mean" in lc:
+        if "mean" in lc and "mcse" not in lc:
             mean_col = c
-        if "sd" in lc or "sigma" in lc:
+        if ("sd" in lc or "sigma" in lc) and "mcse" not in lc:
             sd_col = c
     if mean_col is None or sd_col is None:
         if df.shape[1] >= 3:
