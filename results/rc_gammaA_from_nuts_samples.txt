@@ -1,10 +1,12 @@
-npz /Users/haralds./mw-gd1-jointfit/results/rc_gammaA_from_nuts_samples.npz
-N_samples 600
-gamma_clip_range 0.2 1.8
-A_clip_range 0.05 16.471291770883862
-frac_clipped_low 0.03333333333333333
-frac_clipped_high 0.01
-corr_gamma_A_samples -0.16699046840596188
-gamma_median 1.336645962732919
-gamma_68 0.729192546583851 1.6181366459627329
-gamma_95 0.3366459627329193 1.7503105590062107
+gamma_grid_min 0.204969 gamma_grid_max 1.795031 N_gamma 161
+gamma_median 1.336646
+gamma_68 0.729193 1.618137
+gamma_95 0.336646 1.750311
+binning_convention: core <0.5, shallow [0.5,1.0), nfw [1.0,1.5), steep >=1.5 (half-open bins)
+P_core_<0.5 0.090000
+P_shallow_[0.5,1.0) 0.208333
+P_nfw_[1.0,1.5) 0.358333
+P_steep_>=1.5 0.343333
+mass_at_gamma_0.5 NONE
+mass_at_gamma_1.0 0.005000
+mass_at_gamma_1.5 NONE
