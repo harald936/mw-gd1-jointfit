@@ -33,42 +33,49 @@ def load_qzA_grid(path):
 
 
 def load_gamma_from_rc_summary(path):
-    df = pd.read_csv(path)
-    name_col = df.columns[0]
-    if name_col.lower().startswith("unnamed"):
-        name_col = df.columns[0]
-    mask = df[name_col].astype(str) == "gamma"
-    if not mask.any():
-        raise RuntimeError("No gamma row found in rc_nuts_summary.csv")
-    row = df.loc[mask].iloc[0]
-    mean_col = None
-    sd_col = None
-    for c in df.columns:
-        lc = c.lower()
-        if "mean" in lc and "mcse" not in lc:
-            mean_col = c
-        if ("sd" in lc or "sigma" in lc) and "mcse" not in lc:
-            sd_col = c
-    if mean_col is None or sd_col is None:
-        if df.shape[1] >= 3:
-            mean_col = df.columns[1]
-            sd_col = df.columns[2]
-        else:
-            raise RuntimeError("Could not identify mean/sd columns for gamma")
-    mu = float(row[mean_col])
-    sigma = float(row[sd_col])
-    if not np.isfinite(mu) or not np.isfinite(sigma) or sigma <= 0.0:
-        raise RuntimeError("Invalid gamma mean/sd in rc_nuts_summary.csv")
-    g_min = max(0.0, mu - 4.0 * sigma)
-    g_max = mu + 4.0 * sigma
-    gamma_grid = np.linspace(g_min, g_max, 200)
-    p_gamma = np.exp(-0.5 * ((gamma_grid - mu) / sigma) ** 2)
-    s = p_gamma.sum()
-    if s <= 0.0:
-        raise RuntimeError("Gamma posterior sum is nonpositive")
-    p_gamma /= s
-    return gamma_grid, p_gamma, mu, sigma
+    import numpy as np
+    import pandas as pd
 
+    df = pd.read_csv(path)
+    cols = set(df.columns)
+
+    if {"gamma_mean","gamma_sd"}.issubset(cols):
+        mu = float(df["gamma_mean"].iloc[0])
+        sigma = float(df["gamma_sd"].iloc[0])
+    else:
+        namecol = None
+        for c in ["param","name","parameter"]:
+            if c in cols:
+                namecol = c
+                break
+        if namecol is None:
+            namecol = df.columns[0]
+
+        mask = df[namecol].astype(str).str.contains("gamma", case=False, na=False)
+        if not mask.any():
+            raise RuntimeError("No gamma row found in rc_nuts_summary.csv")
+
+        row = df.loc[mask].iloc[0]
+
+        mu = None
+        for c in ["mu","mean","value","gamma_mean"]:
+            if c in cols:
+                mu = float(row[c])
+                break
+
+        sigma = None
+        for c in ["sigma","sd","std","stdev","gamma_sd"]:
+            if c in cols:
+                sigma = float(row[c])
+                break
+
+        if mu is None or sigma is None:
+            raise RuntimeError("Could not parse gamma mean/sd from rc_nuts_summary.csv")
+
+    g = np.linspace(mu - 5*sigma, mu + 5*sigma, 500)
+    p = np.exp(-0.5*((g - mu)/sigma)**2)
+    p = p / p.sum()
+    return g, p, mu, sigma
 
 def marginal_1d_from_3d(qz, A, gamma, p3, axis):
     if axis == 0:
