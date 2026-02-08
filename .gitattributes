@@ -1,0 +1,2 @@
+results/*chain.npz filter=lfs diff=lfs merge=lfs -text
+results/*grid.npz filter=lfs diff=lfs merge=lfs -text

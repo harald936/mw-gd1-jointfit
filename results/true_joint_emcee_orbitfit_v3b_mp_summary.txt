@@ -1,0 +1,1 @@
+true joint sampler (v3b_mp), multiprocessing via v3b_api\nwalkers 64 burn 200 steps 10000 seed 42 ncores 12\nmle [199.73464386275995, 6.083615033946267, 0.9277839408165136]\nmle_time_s 13.45\nmean_acceptance 0.516911\nvh_kms p16 199.546808 p50 199.756852 p84 199.976259\nrh_kpc p16 6.060090 p50 6.085264 p84 6.110423\nqz p16 0.926815 p50 0.927693 p84 0.928480\nruntime_s 6389.14\n
