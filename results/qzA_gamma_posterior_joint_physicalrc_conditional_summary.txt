@@ -1,0 +1,8 @@
+3D constructed posterior using conditional gamma|A:
+p(qz, A, gamma | data) = p(qz, A | GD-1+RC) * p(gamma | A, RC)
+qz median 1.091763, 68% [1.078881, 1.104661], 95% [1.066347, 1.117141]
+A  median 1.061711, 68% [1.054186, 1.070222], 95% [1.045888, 1.077028]
+g  median 0.515145, 68% [0.278327, 1.310357], 95% [0.275052, 1.681413]
+inputs:
+  results/qzA_posterior_joint_physicalrc_refined_grid.npz
+  results/rc_gammaA_from_nuts_samples.npz
