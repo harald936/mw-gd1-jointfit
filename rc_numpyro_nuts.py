@@ -99,15 +99,17 @@ def model(R, y, sigma_obs):
 # ----------------- Run NUTS, save figures -----------------
 def main():
     numpyro.set_platform("cpu")
-    numpyro.set_host_device_count(1)
+    numpyro.set_host_device_count(2)
 
     nuts = NUTS(model, init_strategy=init_to_median())
-    mcmc = MCMC(nuts, num_warmup=800, num_samples=1200, num_chains=1, progress_bar=True)
+    mcmc = MCMC(nuts, num_warmup=800, num_samples=1200, num_chains=2, progress_bar=True)
     mcmc.run(jax.random.PRNGKey(0), R, y, sigma_obs)
-    posterior = mcmc.get_samples()
+    posterior_chain = mcmc.get_samples(group_by_chain=True)
+    posterior = mcmc.get_samples(group_by_chain=False)
     Path("results").mkdir(parents=True, exist_ok=True)
-    az.summary(posterior).to_csv("results/rc_nuts_summary.csv")
-
+    _samples = mcmc.get_samples(group_by_chain=True)
+    _idata = az.from_dict(posterior=_samples)
+    az.summary(_idata).to_csv("results/rc_nuts_summary.csv")
     # Predict ribbon for the physics mean only
     nS = min(400, posterior["logMd"].shape[0])
     idx = np.random.choice(posterior["logMd"].shape[0], nS, replace=False)
