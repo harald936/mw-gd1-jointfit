@@ -61,3 +61,6 @@ results/*.txt
 !results/rc_gamma_posterior_core_vs_cusp.txt
 !results/qzA_gamma_posterior_joint_physicalrc_summary.txt
 results/qzA_gamma_posterior_joint_physicalrc_factored_grid.npz
+
+**/joint_rc_fit.png
+**/joint_stream_fit.png
